@@ -1,132 +1,154 @@
 <form style="border: 1px solid #000; padding: 20px; width: 400px;">
-    <fieldset>
-      <legend><strong>Dados Pessoais</strong></legend>
-  
-      <label for="nome">Nome completo:</label><br>
-      <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo"><br><br>
-  
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com"><br><br>
-  
-      <label for="telefone">Telefone (formato (XX)XXXXX-XXXX):</label><br>
-      <input type="tel" id="telefone" name="telefone" placeholder="(11)91234-5678"><br><br>
-  
-      <label for="senha">Crie uma senha:</label><br>
-      <input type="password" id="senha" name="senha" placeholder="Digite sua senha"><br><br>
-  
-      <label for="idade">Idade:</label><br>
-      <input type="number" id="idade" name="idade" placeholder="Sua idade"><br><br>
-  
-      <label for="estado">Estado de entrega:</label><br>
-      <select id="estado" name="estado">
-        <option value="">--Selecione seu estado--</option>
-        <option value="SP">SP</option>
-        <option value="RJ">RJ</option>
-        <option value="MG">MG</option>
-        <option value="RS">RS</option>
-      </select><br><br>
-  
-      <label for="cnh">Envie uma foto da sua CNH:</label><br>
-      <input type="file" id="cnh" name="cnh"><br><br>
-    </fieldset>
-  </form>
-  
-  <form style="border:1px solid #000; padding:20px; width:450px; font-family: Arial, sans-serif;">
-    <fieldset>
-      <legend><strong>Escolha do Carro</strong></legend>
-  
-      <p>Escolha o modelo:</p>
-      <label>
-        <input type="radio" name="modelo" value="seal">
-        BYD Seal
-      </label><br>
-      <label>
-        <input type="radio" name="modelo" value="han">
-        BYD Han
-      </label><br>
-      <label>
-        <input type="radio" name="modelo" value="song">
-        BYD Song Plus
-      </label>
-    </fieldset>
-  
-    <fieldset style="margin-top:15px;">
-      <legend><strong>Itens adicionais:</strong></legend>
-      <label>
-        <input type="checkbox" name="itens" value="som">
-        Som Premium
-      </label><br>
-      <label>
-        <input type="checkbox" name="itens" value="ar">
-        Ar-condicionado Digital
-      </label><br>
-      <label>
-        <input type="checkbox" name="itens" value="camera">
-        Câmera 360°
-      </label>
-    </fieldset>
-  
-    <fieldset style="margin-top:15px;">
-      <legend><strong>Cor do carro:</strong></legend>
-      <input type="color" name="cor" value="#000000" style="width:50px; height:30px; border:none; padding:0;">
-    </fieldset>
-  
-    <fieldset style="margin-top:15px;">
-      <legend><strong>Intensidade da cor (brilho):</strong></legend>
-      <input type="range" name="brilho" min="0" max="100" value="50" style="width:100%;">
-    </fieldset>
-  
-    <p style="margin-top:20px;">
-      <input type="submit" value="Enviar">
-      <input type="reset" value="Limpar">
-    </p>
-  </form>
-  
+  <fieldset>
+    <legend><strong>Dados Pessoais</strong></legend>
 
-  <form style="border:1px solid #000; padding:20px; width:500px; font-family: Arial, sans-serif;">
+    <label for="nome">Nome completo:</label><br>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo"><br><br>
 
-    <fieldset style="margin-bottom:20px;">
-      <legend><strong>Entrega</strong></legend>
-  
-      <label for="data-entrega">Data desejada para entrega:</label><br>
-      <input type="date" id="data-entrega" name="data-entrega"><br><br>
-  
-      <label for="hora-entrega">Hora preferida para entrega:</label><br>
-      <input type="time" id="hora-entrega" name="hora-entrega"><br><br>
-  
-      <label for="mes-compra">Mês da compra:</label><br>
-      <input type="month" id="mes-compra" name="mes-compra">
-    </fieldset>
-  
-    <fieldset>
-      <legend><strong>Sua Opinião</strong></legend>
-  
-      <label for="opiniao">Conte qual é a sua expectativa sobre o carro:</label><br>
-      <textarea id="opiniao" name="opiniao" rows="5" cols="50" placeholder="Exemplo: Espero que o carro tenha boa autonomia, seja confortável, silencioso e impressione os vizinhos!"></textarea>
-    </fieldset>
-  
-  </form>
-  
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com"><br><br>
 
-  <form style="border:1px solid #000; padding:20px; width:500px; font-family: Arial, sans-serif;">
+    <label for="telefone">Telefone (formato (XX)XXXXX-XXXX):</label><br>
+    <input type="tel" id="telefone" name="telefone" placeholder="(11)91234-5678"><br><br>
 
-    <fieldset style="margin-bottom:20px;">
-      <legend><strong>Avaliação dos Modelos BYD</strong></legend>
-  
-      <label for="dolphin">Avalie o BYD Dolphin Plus:</label><br>
-      <input type="text" id="dolphin" name="dolphin" placeholder="0 a 5 estrelas"><br><br>
-  
-      <label for="gs">Avalie o BYD GS:</label><br>
-      <input type="text" id="gs" name="gs" placeholder="0 a 5 estrelas"><br><br>
-  
-      <label for="mini">Avalie o BYD Mini:</label><br>
-      <input type="text" id="mini" name="mini" placeholder="0 a 5 estrelas">
-    </fieldset>
-  
+    <label for="senha">Crie uma senha:</label><br>
+    <input type="password" id="senha" name="senha" placeholder="Digite sua senha"><br><br>
+
+    <label for="idade">Idade:</label><br>
+    <input type="number" id="idade" name="idade" placeholder="Sua idade"><br><br>
+
+    <label for="estado">Estado de entrega:</label><br>
+    <select id="estado" name="estado">
+      <option value="">--Selecione seu estado--</option>
+      <option value="AC">Acre (AC)</option>
+      <option value="AL">Alagoas (AL)</option>
+      <option value="AP">Amapá (AP)</option>
+      <option value="AM">Amazonas (AM)</option>
+      <option value="BA">Bahia (BA)</option>
+      <option value="CE">Ceará (CE)</option>
+      <option value="DF">Distrito Federal (DF)</option>
+      <option value="ES">Espírito Santo (ES)</option>
+      <option value="GO">Goiás (GO)</option>
+      <option value="MA">Maranhão (MA)</option>
+      <option value="MT">Mato Grosso (MT)</option>
+      <option value="MS">Mato Grosso do Sul (MS)</option>
+      <option value="MG">Minas Gerais (MG)</option>
+      <option value="PA">Pará (PA)</option>
+      <option value="PB">Paraíba (PB)</option>
+      <option value="PR">Paraná (PR)</option>
+      <option value="PE">Pernambuco (PE)</option>
+      <option value="PI">Piauí (PI)</option>
+      <option value="RJ">Rio de Janeiro (RJ)</option>
+      <option value="RN">Rio Grande do Norte (RN)</option>
+      <option value="RS">Rio Grande do Sul (RS)</option>
+      <option value="RO">Rondônia (RO)</option>
+      <option value="RR">Roraima (RR)</option>
+      <option value="SC">Santa Catarina (SC)</option>
+      <option value="SP">São Paulo (SP)</option>
+      <option value="SE">Sergipe (SE)</option>
+      <option value="TO">Tocantins (TO)</option>
+    </select><br><br>
+
+
+    <label for="cnh">Envie uma foto da sua CNH:</label><br>
+    <input type="file" id="cnh" name="cnh"><br><br>
+  </fieldset>
+</form>
+
+<form style="border:1px solid #000; padding:20px; width:450px; font-family: Arial, sans-serif;">
+  <fieldset>
+    <legend><strong>Escolha do Carro</strong></legend>
+
+    <p>Escolha o modelo:</p>
+    <label>
+      <input type="radio" name="modelo" value="seal">
+      BYD Seal
+    </label><br>
+    <label>
+      <input type="radio" name="modelo" value="han">
+      BYD Han
+    </label><br>
+    <label>
+      <input type="radio" name="modelo" value="song">
+      BYD Song Plus
+    </label>
+  </fieldset>
+
+  <fieldset style="margin-top:15px;">
+    <legend><strong>Itens adicionais:</strong></legend>
+    <label>
+      <input type="checkbox" name="itens" value="som">
+      Som Premium
+    </label><br>
+    <label>
+      <input type="checkbox" name="itens" value="ar">
+      Ar-condicionado Digital
+    </label><br>
+    <label>
+      <input type="checkbox" name="itens" value="camera">
+      Câmera 360°
+    </label>
+  </fieldset>
+
+  <fieldset style="margin-top:15px;">
+    <legend><strong>Cor do carro:</strong></legend>
+    <input type="color" name="cor" value="#000000" style="width:50px; height:30px; border:none; padding:0;">
+  </fieldset>
+
+  <fieldset style="margin-top:15px;">
+    <legend><strong>Intensidade da cor (brilho):</strong></legend>
+    <input type="range" name="brilho" min="0" max="100" value="50" style="width:100%;">
+  </fieldset>
+
+  <p style="margin-top:20px;">
     <input type="submit" value="Enviar">
     <input type="reset" value="Limpar">
-  
-  </form>
-  
+  </p>
+</form>
 
-  
+
+<form style="border:1px solid #000; padding:20px; width:500px; font-family: Arial, sans-serif;">
+
+  <fieldset style="margin-bottom:20px;">
+    <legend><strong>Entrega</strong></legend>
+
+    <label for="data-entrega">Data desejada para entrega:</label><br>
+    <input type="date" id="data-entrega" name="data-entrega"><br><br>
+
+    <label for="hora-entrega">Hora preferida para entrega:</label><br>
+    <input type="time" id="hora-entrega" name="hora-entrega"><br><br>
+
+    <label for="mes-compra">Mês da compra:</label><br>
+    <input type="month" id="mes-compra" name="mes-compra">
+  </fieldset>
+
+  <fieldset>
+    <legend><strong>Sua Opinião</strong></legend>
+
+    <label for="opiniao">Conte qual é a sua expectativa sobre o carro:</label><br>
+    <textarea id="opiniao" name="opiniao" rows="5" cols="50"
+      placeholder="Exemplo: Espero que o carro tenha boa autonomia, seja confortável, silencioso e impressione os vizinhos!"></textarea>
+  </fieldset>
+
+</form>
+
+
+<form style="border:1px solid #000; padding:20px; width:500px; font-family: Arial, sans-serif;">
+
+  <fieldset style="margin-bottom:20px;">
+    <legend><strong>Avaliação dos Modelos BYD</strong></legend>
+
+    <label for="dolphin">Avalie o BYD Dolphin Plus:</label><br>
+    <input type="text" id="dolphin" name="dolphin" placeholder="0 a 5 estrelas"><br><br>
+
+    <label for="gs">Avalie o BYD GS:</label><br>
+    <input type="text" id="gs" name="gs" placeholder="0 a 5 estrelas"><br><br>
+
+    <label for="mini">Avalie o BYD Mini:</label><br>
+    <input type="text" id="mini" name="mini" placeholder="0 a 5 estrelas">
+  </fieldset>
+
+  <input type="submit" value="Enviar">
+  <input type="reset" value="Limpar">
+
+</form>
